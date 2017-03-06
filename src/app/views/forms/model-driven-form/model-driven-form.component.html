@@ -1,0 +1,20 @@
+<div class="form-group container">
+<form [formGroup]="login" (onSubmit)="login()">
+<div class="form-group">
+  <label for="userName">Username:</label>
+  <input type="text" class="form-control" id="userName"
+    required  name="username" formControlName="username"/>
+    <div *ngIf="formErrors.username">{{ formErrors.username }}</div>
+</div>
+
+<div class="form-group">
+  <label for="password">Password:</label>
+  <input type="password"  class="form-control" id="password"
+     required  name="password" formControlName="password"/> 
+     <div *ngIf="formErrors.password">{{ formErrors.password }}</div>   
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
