@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { FormsRoutingModule } from './forms-routing.module';
@@ -12,7 +11,6 @@ import {ModelDrivenFormComponent} from './model-driven-form/model-driven-form.co
     CommonModule,
     FormsRoutingModule
   ],
-  exports:[HomeComponent,TemplateDrivenFormComponent,ModelDrivenFormComponent],
   declarations: [HomeComponent,TemplateDrivenFormComponent,ModelDrivenFormComponent]
 })
-export class FormModule { }
+export class FormsModule { }

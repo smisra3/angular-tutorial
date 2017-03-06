@@ -2,8 +2,8 @@ import {Component} from '@angular/core';
 
 @Component({
     selector:'my-form',
-    templateUrl:'./form.component.html',
-    styleUrls:['./form.component.css']
+    templateUrl:'./template-form.component.html',
+    styleUrls:['./template-form.component.scss']
 })
 export class TemplateDrivenFormComponent{
     submitted:Boolean;

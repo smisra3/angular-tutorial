@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  title = 'Forms';
+  submenu = [{
+    name: 'Template Driven Form',
+    path: 'template'
+  }, {
+    name: 'Model Driven Form',
+    path: 'model'
+  }];
+
   constructor() { }
 
   ngOnInit() {
