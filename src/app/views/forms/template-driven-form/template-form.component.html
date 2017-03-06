@@ -1,0 +1,25 @@
+<div [hidden]="submitted">
+<div class="form-group container">
+<form (ngSubmit)="myForm($event)" #sampleForm="ngForm">
+<div class="form-group">
+  <label for="userName">Username:</label>
+  <input type="text" class="form-control" id="userName"
+    required [(ngModel)]="userName"  name="username" #temp1= "ngModel"/>
+    <div [hidden]="temp1.valid" class="alert alert-danger">
+        Username is necessary
+    </div>    
+</div>
+
+<div class="form-group">
+  <label for="password">Password:</label>
+  <input type="password"  class="form-control" id="password"
+     required [(ngModel)]="password" #temp2="ngModel" name="password">
+    <div [hidden]="temp2.valid" class="alert alert-danger">
+        Password is necessary
+    </div>    
+</div>
+
+<button type="submit" class="btn btn-primary" [disabled]="!sampleForm.form.valid">Submit</button>
+</form>
+</div>
+</div>

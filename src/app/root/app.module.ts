@@ -8,10 +8,11 @@ import { SharedModule } from '../shared/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {TemplateDrivenFormComponent} from '../views/forms/template-driven-form/template-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
