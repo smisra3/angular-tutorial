@@ -5,10 +5,10 @@ import { Pipe, PipeTransform } from '@angular/core';
     name: 'search'
   }
 )
-export class ToCamelCase implements PipeTransform {
+export class Search implements PipeTransform {
 
-  transform(value:string,arr:Array<any>):Array<any>  {
-      
+  transform(value:string,arr:Array<string>):Array<string>  {
+
    return arr;
   }
 }
