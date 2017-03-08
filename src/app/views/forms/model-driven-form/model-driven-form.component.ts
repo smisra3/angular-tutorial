@@ -3,8 +3,8 @@ import { FormGroup, FormControl, FormBuilder,Validators } from '@angular/forms';
 
 @Component({
     selector:'mysecond-form',
-    templateUrl:'./model-form.component.html',
-    styleUrls:['./model-form.component.css']
+    templateUrl:'./model-driven-form.component.html',
+    styleUrls:['./model-driven-form.component.scss']
 })
 export class ModelDrivenFormComponent{
     submitted:Boolean;

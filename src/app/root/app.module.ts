@@ -12,7 +12,7 @@ import {TemplateDrivenFormComponent} from '../views/forms/template-driven-form/t
 
 @NgModule({
   declarations: [
-    AppComponent,TemplateDrivenFormComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
